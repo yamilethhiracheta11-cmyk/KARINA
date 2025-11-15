@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Felicitación</title>
+    <style>
+        body {
+            /* Mantenemos el centrado del texto y el fondo */
+            margin: 0;
+            background-color: #fce4ec; /* Color de fondo rosa pastel */
+            font-family: Arial, sans-serif;
+            text-align: center; /* Centra el contenido en general */
+        }
+
+        /* --- Estilo del Mensaje de Felicitación Superior --- */
+        .Happy__Birthday {
+            color: #c2185b;
+            font-size: 3.5em;
+            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+            margin-bottom: 5px; 
+            margin-top: 5vh; 
+        }
+        .Happy__Birthday::before {
+            content: "HOLA PRECIOSA FELICIDADES POR TUS 21 KARIBELLA!";
+        }
+
+        /* --- ESTILOS DE IMAGEN LATERAL Y GIFS (MODIFICADO) --- */
+        .contenedor-principal {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 30px auto 0; /* Más espacio arriba */
+        }
+
+        .imagen-central {
+            width: 600px; 
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 30px; /* HECHO: Incrementamos el margen lateral para separarla */
+        }
+        
+        .gif-lateral {
+            width: 200px; /* HECHO: Imágenes laterales más grandes (de 150px a 200px) */
+            height: auto;
+            object-fit: contain;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 3px solid purple; /* HECHO: Borde morado */
+            margin: 0 20px; /* Espacio para el borde y separación extra */
+        }
+        
+        /* --- ESTILO PARA EL MENSAJE FINAL --- */
+        .mensaje-final {
+            color: purple;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 30px auto;
+            padding: 0 5%;
+            max-width: 800px;
+            text-align: center;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+
+        /* --- ESTILOS PARA EL CARRUSEL --- */
+        .carrusel {
+            width: 100%;
+            overflow-x: scroll; 
+            white-space: nowrap; 
+            padding: 20px 0;
+            margin-top: 30px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .carrusel img {
+            width: 800px; 
+            height: 500px; 
+            object-fit: cover; 
+            display: inline-block;
+            margin: 0 10px; 
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- ESTILO PARA EL BOTÓN --- */
+        .boton-final {
+            background-color: #c2185b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+            margin: 40px auto;
+            display: block;
+        }
+        .boton-final:hover {
+            background-color: #d81b60;
+        }
+        
+        /* Se añade el estilo para la imagen final oculta, aunque no esté en el HTML aún, es buena práctica mantenerlo */
+        #imagen-final {
+            display: none; 
+            width: 600px; 
+            height: auto;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="Happy__Birthday"></h1>
+    
+    <marquee style="color: purple; font-size: 1.2em; font-weight: bold; margin-bottom: 20px;">
+        ¡Que tengas un día inolvidable lleno de alegría, amor y mucha diversión! ¡Te mereces lo mejor Karina bella!
+    </marquee>
+    
+    <div class="contenedor-principal">
+        <img src="C:\Users\Yaret\Downloads\anime-yuru.gif" alt="Animación izquierda" class="gif-lateral">
+        
+        <img src="C:\Users\Yaret\Downloads\c55c37e70a297fd64d22fcac1ef0519b.jpg" alt="Imagen de Celebración" class="imagen-central">
+        
+        <img src="C:\Users\Yaret\Downloads\siola.gif" alt="Animación derecha" class="gif-lateral">
+    </div>
+    
+    <p class="mensaje-final">
+        HOLA PEQUEÑA, QUIERO DESEARTE UN FELIZ CUMPLEAÑOS HOY Y SIEMPRE, QUE SEPAS QUE ERES MI MEJOR AMIGA Y TE ADORO MUCHITO, YA QUIERO VERTE OTRA VEZ Y DARTE TU REGALO, ME ENCANTA CUANDO NOS VEMOS PORQUE ME SIENTO MUYY EN CONFIANZA Y PODEMOS TENER NUESTRAS PLATICAS DE CHICAS Y CRITICAR HOMBRES AGUSTO, TE AMOOO, ERES UNA PERSONA GRANDIOSA QUE ADORO CON TODO MI CORAZON Y SIEMPRE VOY A QUERER QUE ESTES BIEN Y QUE OBVIAMENTE SEAMOS AMIGAS TODA LA ETERNIDAD, TE AMA MUCHO TU MEJOR AMIGA LESLY. ESPERO LA PASES DE LO MEJOR CON TU FAMILIA, QUE TODO ESTE BIEN, QUE TE SIENTAS MUY FELIZ TILINA, QUE TE REGALEN UN CHINGO DE COSAS, APROVECHA EL DIA DE TU CUMPLE, PASATELA DE LO MEJOR DE LO MEJOOOR Y COME MUCHO PASTEL JEJE TE QUIERO MUCHIIIITO TILINA DE MI CORAZON ♡♡♡♡♡
+    </p>
+    
+    <div class="carrusel">
+        <img src="C:\Users\Yaret\Downloads\YO.jpeg" alt="Foto 1">
+        <img src="C:\Users\Yaret\Downloads\WhatsApp Image 2025-11-14 at 10.16.48 PM (1).jpeg" alt="Foto 2">
+        <img src="C:\Users\Yaret\Downloads\c2ddbefdf84b910c2f39c35374f22144.jpg" alt="Foto 3">
+        <img src="C:\Users\Yaret\Downloads\WhatsApp Image 2025-11-14 at 10.16.48 PM.jpeg" alt="Foto 4">
+        <img src="C:\Users\Yaret\Downloads\WhatsApp Image 2025-11-14 at 10.16.48 PM (2).jpeg" alt="Foto 5">
+        <img src="C:\Users\Yaret\Downloads\f5bc136480ec26b8fe6d82d5a3493acd.jpg" alt="Foto 8">
+    </div>
+
+    <button class="boton-final" onclick="mostrarMensajeSecuencial()">
+        TOCAME 3 VECES...
+    </button>
+    
+    <script>
+        let contadorClicks = 0; // Variable para contar cuántas veces se ha presionado
+        
+        function mostrarMensajeSecuencial() {
+            contadorClicks++; // Aumenta el contador con cada click
+            
+            if (contadorClicks === 1) {
+                // Primer click
+                alert('PORQUE ME TOCASTE');
+            } else if (contadorClicks === 2) {
+                // Segundo click
+                alert('WENDY NO');
+            } else if (contadorClicks === 3) {
+                // Tercer click
+                alert('NO ES CIERTO MI VIDA, QUE LA PASES DE LO MEJOR HOY TE ADORO');
+                // IMPORTANTE: Aquí deberías poner la línea para mostrar la imagen final si la tuvieras agregada en el HTML
+                
+                // Reinicia el contador para que la secuencia empiece de nuevo
+                contadorClicks = 0; 
+            }
+        }
+    </script>
+
+</body>
+</html>
